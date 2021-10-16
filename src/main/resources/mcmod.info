@@ -1,0 +1,16 @@
+[
+{
+  "modid": "primal",
+  "name": "PRIMAL FEAR",
+  "description": "Stun mobs in a short radius",
+  "version": "${1.0}",
+  "mcversion": "${1.12}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["NOTASMR"],
+  "credits": "NOTASMR",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

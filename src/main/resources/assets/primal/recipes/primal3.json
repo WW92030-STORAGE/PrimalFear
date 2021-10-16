@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " b ",
+        "bxb",
+        " b "
+    ],
+    "key":
+    {
+        "x":
+        {
+            "item": "primal:primal2"
+        },
+        "b":
+        {
+            "item": "minecraft:blaze_powder"
+        }
+    },
+    "result":
+    {
+        "item": "primal:primal3",
+        "count": 1
+    }
+}

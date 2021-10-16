@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "primal:primal2"
+    }
+  ],
+  "result": {
+    "item": "primal:primal",
+    "count": 1
+  }
+}
