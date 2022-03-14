@@ -54,7 +54,8 @@ public class PrimalFear extends Item implements IModel {
 		long time = System.nanoTime();
 		long stored = time;
 		if (isActive(player)) stored = Reference.active.get(player);
-		if (time - stored >= Reference.cooldown * 1000000000) Reference.active.remove(player);
+		System.out.println(time + " " + stored + " " + (time - stored) / 1000000000.0);
+		if (time - stored >= Reference.cooldown * 1000000000L) Reference.active.remove(player);
 		
 		if (isActive(player)) return res;
 		
@@ -103,6 +104,7 @@ public class PrimalFear extends Item implements IModel {
 			player.world.getMinecraftServer().getCommandManager().executeCommand(ics, weakness);
 			
 			player.getCooldownTracker().setCooldown(is.getItem(), Reference.cooldown * 20);
+			Reference.active.put(player, System.nanoTime());
 		}
 		catch (Exception e) {
 			System.out.println(e);
